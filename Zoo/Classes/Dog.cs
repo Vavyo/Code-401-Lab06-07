@@ -9,6 +9,8 @@ namespace Zoo.Classes
     public abstract class Dog: Mammal
     {
         // properties
+        public override bool Nocturnal => false;
+
         public virtual string FurPattern => "solid";
 
         // methods
