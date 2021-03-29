@@ -8,5 +8,25 @@ namespace Zoo.Classes
 {
     public abstract class Mammal
     {
+        // Properties
+        public virtual int Limbs => 4;
+        public virtual bool Nocturnal => true;
+        public abstract string Gender { get; }
+        public abstract int age { get; set; }
+
+        // Methods
+        public abstract string Cry();
+        public abstract string Attack();
+        public virtual string Feed(string food)
+        {
+            if (food == "meat")
+                return "yum";
+            else
+                return "yuck";
+        }
+        public virtual string Climb()
+        {
+            return "With ease.";
+        }
     }
 }
