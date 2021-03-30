@@ -7,7 +7,7 @@ using Xunit;
 
 namespace Zoo.tests.Classes
 {
-    class Ragdoll
+    class SiameseTests
     {
     }
 }

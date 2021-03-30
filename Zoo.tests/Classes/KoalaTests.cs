@@ -7,8 +7,7 @@ using Xunit;
 
 namespace Zoo.tests.Classes
 {
-    class AustralianShepherd
+    class KoalaTests
     {
-        
     }
 }
