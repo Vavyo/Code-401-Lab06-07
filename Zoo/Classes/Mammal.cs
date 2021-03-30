@@ -20,9 +20,9 @@ namespace Zoo.Classes
         public virtual string Feed(string food)
         {
             if (food == "meat")
-                return "yum";
+                return "Yum";
             else
-                return "yuck";
+                return "Yuck";
         }
         public virtual string Climb()
         {
