@@ -8,8 +8,8 @@ namespace Zoo.Classes
 {
     public class GermanShepherd : Dog
     {
-        public override string Gender { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public override int Age { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public override string Gender { get; set; }
+        public override int Age { get; set; }
         public override string FurPattern => "sable";
         public GermanShepherd(string gender, int age)
         {
