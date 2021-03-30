@@ -23,9 +23,9 @@ namespace Zoo.Classes
         public override string Feed(string food)
         {
             if (food == "plant")
-                return "yum";
+                return "Yum";
             else
-                return "yuck";
+                return "Yuck";
         }
         public Koala(string gender, int age)
         {
