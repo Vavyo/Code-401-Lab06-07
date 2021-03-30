@@ -18,7 +18,7 @@ namespace Zoo.tests.Classes
             // act
             string cry = kitter.Cry();
             // assert
-            Assert.Equal("meow", cry);
+            Assert.Equal("Meow", cry);
         }
         [Fact]
         public void Gender_returns_constructed()
