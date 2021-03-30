@@ -11,8 +11,8 @@ namespace Zoo.Classes
         // Properties
         public virtual int Limbs => 4;
         public virtual bool Nocturnal => true;
-        public abstract string Gender { get; }
-        public abstract int age { get; set; }
+        public abstract string Gender { get; set; }
+        public abstract int Age { get; set; }
 
         // Methods
         public abstract string Cry();
