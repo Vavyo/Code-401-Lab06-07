@@ -6,15 +6,22 @@ using System.Threading.Tasks;
 
 namespace Zoo.Classes
 {
-    public class AustralianShepherd : Dog
+    public class AustralianShepherd : Dog, IHasFur
     {
         public override string Gender { get; set; }
         public override int Age { get; set; }
-        public override string FurPattern => "black tri";
-        public AustralianShepherd(string gender, int age)
+        public string FurPattern { get; }
+
+        public char FurLength => 'l';
+
+        public string FurColor { get; }
+
+        public AustralianShepherd(string gender, int age, string furColor, string furPattern)
         {
             Gender = gender;
             Age = age;
+            FurColor = furColor;
+            FurPattern = furPattern;
         }
     }
 }

@@ -14,7 +14,7 @@ namespace Zoo.tests.Classes
         public void Age_is_set_in_constructor()
         {
             // arrange
-            GermanShepherd gus = new GermanShepherd("boy", 10);
+            GermanShepherd gus = new GermanShepherd("boy", 10, "brown");
 
             // act
             int age = gus.Age;
@@ -27,13 +27,26 @@ namespace Zoo.tests.Classes
         public void Gender_is_set_in_constructor()
         {
             // arrange
-            GermanShepherd gus = new GermanShepherd("boy", 10);
+            GermanShepherd gus = new GermanShepherd("boy", 10, "black");
 
             // act
             string gender = gus.Gender;
 
             // assert
             Assert.Equal("boy", gender);
+
+        }
+        [Fact]
+        public void Interface_implemented()
+        {
+            // arrange
+            GermanShepherd gus = new GermanShepherd("boy", 10, "black");
+
+            // act
+            char result = gus.FurLength;
+
+            // assert
+            Assert.Equal('s', result);
 
         }
     }

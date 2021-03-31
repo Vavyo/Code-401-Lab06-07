@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace Zoo.Classes
 {
-    public abstract class Cat : Mammal 
+    public interface IHasClaws
     {
-        // methods
-        public override string Cry()
-        {
-            return "Meow";
-        }
+        string Scratch();
+
+        bool CanClimb { get; }
     }
 }
