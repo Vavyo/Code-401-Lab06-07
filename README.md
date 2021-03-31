@@ -1,7 +1,7 @@
 # Code-401-Lab06-07: Zoo
 
 **Author**: Nathan Hall
-**Version**: 0.1.0 (increment the patch/fix version number up if you make more commits past your first submission)
+**Version**: 0.1.4 (increment the patch/fix version number up if you make more commits past your first submission)
 
 ## Overview
 <!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for a Code Fellows 401 class. (i.e. What's your problem domain?) -->
@@ -30,6 +30,9 @@ Abstraction is taking commonly utilized properties and methods and moving them t
 Inheritance is a great way to use abstraction as it involves ensuring other classes have expected methods and properties. Refer to abstraction for examples.
 
 Polymorphism allows objects to be unique depending on the context. The concrete Classes such as Ragdoll and Koala are examples.
+
+Interfaces allow the ability to ensure objects have desired functionality.
+I implemented it with a has claws for climbing and attacking and a has fur for fur length pattern and color.
 
 ## Change Log
 <!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
