@@ -14,7 +14,7 @@ namespace Zoo.tests.Classes
         public void Cry_returns_meow()
         {
             // arrange
-            Siamese kitter = new Siamese("girl", 4);
+            Siamese kitter = new Siamese("girl", 4, "light");
             // act
             string cry = kitter.Cry();
             // assert
@@ -24,11 +24,24 @@ namespace Zoo.tests.Classes
         public void Gender_returns_constructed()
         {
             // arrange
-            Siamese kitter = new Siamese("girl", 4);
+            Siamese kitter = new Siamese("girl", 4, "dark");
             // act
             string gender = kitter.Gender;
             // assert
             Assert.Equal("girl", gender);
         }
+        [Fact]
+        public void Proof_of_interface()
+        {
+            // arrange
+            Siamese kitter = new Siamese("girl", 5, "dark");
+
+            // act
+            char result = kitter.FurLength;
+
+            //assert
+            Assert.Equal('s', result);
+        }
+
     }
 }

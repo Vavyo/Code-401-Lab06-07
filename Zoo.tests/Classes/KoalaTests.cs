@@ -14,7 +14,7 @@ namespace Zoo.tests.Classes
         public void Feed_returns_yum_with_plant()
         {
             // arrange 
-            Koala greg = new Koala("boy", 2);
+            Koala greg = new Koala("boy", 2, "brown");
             // act
             string result = greg.Feed("plant");
             // assert
@@ -24,11 +24,21 @@ namespace Zoo.tests.Classes
         public void Feed_returns_yuck_with_meat()
         {
             // arrange 
-            Koala greg = new Koala("boy", 2);
+            Koala greg = new Koala("boy", 2, "brown");
             // act
             string result = greg.Feed("meat");
             // assert
             Assert.Equal("Yuck", result);
+        }
+        [Fact]
+        public void Interface_implemented()
+        {
+            // arrange 
+            Koala greg = new Koala("boy", 2, "brown");
+            // act
+            string result = greg.FurPattern;
+            // assert
+            Assert.Equal("solid", result);
         }
     }
 }

@@ -14,7 +14,7 @@ namespace Zoo.tests.Classes
         public void Feed_returns_yum_on_meat()
         {
             // arrange
-            Ragdoll meg = new Ragdoll("girl", 5);
+            Ragdoll meg = new Ragdoll("girl", 5, "light");
             // act
             string result = meg.Feed("meat");
             // assert
@@ -24,10 +24,22 @@ namespace Zoo.tests.Classes
         public void Attack_returns_claw_message()
         {
             // arrange
-            Ragdoll meg = new Ragdoll("girl", 5);
+            Ragdoll meg = new Ragdoll("girl", 5, "dark");
             // act
             string result = meg.Attack();
             // assert
+            Assert.Equal("Slash with my sharp claws", result);
+        }
+        [Fact]
+        public void Proof_of_interface()
+        {
+            // arrange
+            Ragdoll meg = new Ragdoll("girl", 5, "dark");
+
+            // act
+            string result = meg.Scratch();
+
+            //assert
             Assert.Equal("Slash with my sharp claws", result);
         }
     }

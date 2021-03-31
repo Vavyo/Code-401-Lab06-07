@@ -6,14 +6,22 @@ using System.Threading.Tasks;
 
 namespace Zoo.Classes
 {
-    public class Koala : Marsupial
+    public class Koala : Marsupial, IHasClaws, IHasFur
     {
         public override string Gender { get; set; }
         public override int Age { get; set; }
 
+        public bool CanClimb => true;
+
+        public char FurLength => 's';
+
+        public string FurPattern => "solid";
+
+        public string FurColor { get; }
+
         public override string Attack()
         {
-            return "I will drop from on high and rip the skin from your face.";
+            return Scratch();
         }
 
         public override string Cry()
@@ -27,10 +35,17 @@ namespace Zoo.Classes
             else
                 return "Yuck";
         }
-        public Koala(string gender, int age)
+
+        public string Scratch()
+        {
+            return "I will drop from on high and rip the skin from your face.";
+        }
+
+        public Koala(string gender, int age, string furColor)
         {
             Gender = gender;
             Age = age;
+            FurColor = furColor;
         }
     }
 }

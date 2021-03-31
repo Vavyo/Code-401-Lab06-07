@@ -11,8 +11,6 @@ namespace Zoo.Classes
         // properties
         public override bool Nocturnal => false;
 
-        public virtual string FurPattern => "solid";
-
         // methods
         public override string Attack()
         {
